@@ -10,7 +10,6 @@ class Goquiet < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    Language::Go.stage_deps resources, buildpath/"src"
     (buildpath/"src/github.com/cbeuw").mkpath
     ln_s buildpath, "src/github.com/cbeuw/GoQuiet"
 
