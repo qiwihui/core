@@ -14,6 +14,7 @@ class Goquiet < Formula
     ln_s buildpath, "src/github.com/cbeuw/GoQuiet"
 
     system "make"
+    system "make", "install"
     bin.install Dir["build/*"]
     prefix.install_metafiles
   end
