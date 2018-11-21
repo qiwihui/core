@@ -16,7 +16,6 @@ class Goquiet < Formula
     system "make"
     bin.install Dir["build/*"]
     prefix.install_metafiles
-    system "make", "install"
   end
 
   test do
