@@ -5,7 +5,7 @@ class Iodine < Formula
   sha256 "ad2b40acf1421316ec15800dcde0f587ab31d7d6f891fa8b9967c4ded93c013e"
 
   def install
-    system "make", "PREFIX=#{prefix}"
+    system "make"
     bin.install "iodine"
     bin.install "iodined"
     man8.install "iodine.8"
