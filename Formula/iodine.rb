@@ -4,15 +4,11 @@ class Iodine < Formula
   url "http://code.kryo.se/iodine/iodine-0.7.0.tar.gz"
   sha256 "ad2b40acf1421316ec15800dcde0f587ab31d7d6f891fa8b9967c4ded93c013e"
 
-  head do
-    url "https://github.com/yarrick/iodine.git"
-  end
-
   def install
-    system "make", "PREFIX=#{prefix}" if build.head?
-    bin.install "bin/iodine"
-    bin.install "bin/iodined"
-    man8.install "man/iodine.8"
+    system "make", "PREFIX=#{prefix}"
+    bin.install "iodine"
+    bin.install "iodined"
+    man8.install "iodine.8"
   end
 
   test do
