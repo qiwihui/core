@@ -6,9 +6,9 @@ class Iodine < Formula
 
   def install
     system "make"
-    bin.install "iodine"
-    bin.install "iodined"
-    man8.install "iodine.8"
+    bin.install "bin/iodine"
+    bin.install "bin/iodined"
+    man8.install "man/iodine.8"
   end
 
   test do
