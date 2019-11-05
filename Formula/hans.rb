@@ -1,4 +1,4 @@
-class Iodine < Formula
+class Hans < Formula
     desc "Tunnel IP over ICMP"
     homepage "http://code.gerade.org/hans/"
     url "https://github.com/friedrich/hans/archive/v1.0.tar.gz"
