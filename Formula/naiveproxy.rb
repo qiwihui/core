@@ -1,4 +1,4 @@
-class NaiveProxy < Formula
+class Naiveproxy < Formula
   desc "Naive is a proxy to transport traffic as Chromium traffic."
   homepage "https://github.com/klzgrad/naiveproxy"
   version "v83.0.4103.61-1"
